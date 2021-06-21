@@ -6,3 +6,11 @@ theme:
     scheme: slate
     primary: blue
     accent: deep purple
+  font: Noto Sans JP
+  features:
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+plugins:
+  - search
