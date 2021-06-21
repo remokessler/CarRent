@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "5pStjioKUcxuqlTiVUvo9Sj+cB+i8sUVwHMNpqUtb5bYyZRRGFS8nlJnn0ZV1W/RcDlOiWTbdyXrogIiTwjT5g==",
+  "success": true,
+  "projectFilePath": "C:\\git\\CarRent\\CarRent.Backend\\CarRent.Backend\\CarRent.Backend.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Remo\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Remo\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Remo\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\Remo\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\Remo\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\Remo\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
