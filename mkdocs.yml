@@ -1,11 +1,11 @@
-site_name: My Docs
+site_name: Car Rent Remo Kessler
 site_url: https://example.com/
 theme:
   name: material
   palette:
     scheme: slate
     primary: blue
-    accent: deep purple
+    accent: orange
   font: Noto Sans JP
   features:
     - navigation.indexes
@@ -14,3 +14,16 @@ theme:
     - search.highlight
 plugins:
   - search
+  - mermaid2:
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
+
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/mermaid/7.0.9/mermaid.dark.css
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mermaid/7.0.9/mermaid.min.js
