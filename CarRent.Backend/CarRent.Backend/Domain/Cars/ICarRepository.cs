@@ -8,6 +8,6 @@ namespace CarRent.Backend.Domain.Cars
         public Car Get(Guid id);
         public IEnumerable<Car> GetAll();
         public Car Create(string brand, string type, string carClass);
-
+        public void Delete(Guid id);
     }
 }

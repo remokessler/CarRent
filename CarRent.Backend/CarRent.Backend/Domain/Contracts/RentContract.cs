@@ -4,13 +4,13 @@ using System;
 
 namespace CarRent.Backend.Domain.Contracts
 {
-    public class RentContract
+    public class RentContract : IContract
     {
-        public Guid Id { get; }
-        public Customer Customer { get; }
-        public CarClass CarClass { get; }
-        public DateTimeOffset StartDate { get; }
-        public DateTimeOffset EndDate { get; }
-        public decimal TotalAmount { get; }
+        public Guid Id { get; set; }
+        public Customer Customer { get; set; }
+        public Car Car { get; set; }
+        public DateTimeOffset StartDate { get; set; }
+        public DateTimeOffset EndDate { get; set; }
+        public decimal TotalAmount => decimal.Parse(EndDate.Subtract(StartDate).Days.ToString()) * Car.CarClass.CostPerDay;
     }
 }

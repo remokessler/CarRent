@@ -59,5 +59,12 @@ namespace CarRent.Backend.Infrastructure.Persistance
         {
             return carRentDbContext.Cars.ToList();
         }
+
+        public void Delete(Guid id)
+        {
+            var car = Get(id);
+            carRentDbContext.Cars.Remove(car);
+            carRentDbContext.SaveChanges();
+        }
     }
 }

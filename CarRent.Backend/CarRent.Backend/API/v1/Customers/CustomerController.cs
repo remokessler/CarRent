@@ -28,7 +28,7 @@ namespace CarRent.Backend.API.v1.Customers
         }
 
         [HttpPost]
-        public ActionResult<Customer> GetById(CustomerPostDTO customer)
+        public ActionResult<Customer> Create(CustomerPostDTO customer)
         {
             return customerRepository.Create(customer.Name, customer.Firstname, customer.City, customer.Street, customer.ZipCode);
         }

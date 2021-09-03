@@ -21,12 +21,9 @@ namespace CarRent.Backend.Infrastructure.Persistance
             {
                 Name = name,
                 Firstname = firstname,
-                Adress = new Adress()
-                {
-                    City = city,
-                    Street = street,
-                    ZipCode = zipCode
-                }
+                City = city,
+                Street = street,
+                ZipCode = zipCode
             };
 
             return carRentDbContext.Customers.Add(newCustomer).Entity;
@@ -40,6 +37,13 @@ namespace CarRent.Backend.Infrastructure.Persistance
         public IEnumerable<Customer> GetAll()
         {
             return carRentDbContext.Customers;
+        }
+
+        public void Delete(Guid id)
+        {
+            var customer = Get(id);
+            carRentDbContext.Customers.Remove(customer);
+            carRentDbContext.SaveChanges();
         }
     }
 }
