@@ -7,7 +7,7 @@ namespace CarRent.Backend.Domain.Cars
     {
         public Car Get(Guid id);
         public IEnumerable<Car> GetAll();
-        public Car Create(string brand, string typ, string carClass);
+        public Car Create(string brand, string type, string carClass);
 
     }
 }

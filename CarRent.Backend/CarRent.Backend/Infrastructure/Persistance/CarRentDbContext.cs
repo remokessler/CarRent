@@ -8,7 +8,7 @@ namespace CarRent.Backend.Infrastructure.Persistance
 {
     public class CarRentDbContext : DbContext
     {
-        public DbSet<Car> Blogs { get; set; }
+        public DbSet<Car> Cars { get; set; }
         public DbSet<Brand> Brands { get; set; }
         public DbSet<CarClass> CarClass { get; set; }
         public DbSet<Customer> Customers { get; set; }
