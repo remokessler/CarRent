@@ -2,7 +2,7 @@
 
 ## Deployment View
 
-![image-20210905193252821](C:\git\CarRent\docs\deploymentView.png)
+<img src="../deploymentView.png" />
 
 DB und Web Client sind noch nicht umgesetzt, würden aber so hineinpassen.
 
