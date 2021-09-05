@@ -1,4 +1,8 @@
-# Welcome to MkDocs
+# How To MkDocs
+
+```c#
+Ist nur hier für den Zukünftigen, der das gerne mal lesen würde und MkDocs vergessen hat
+```
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 

@@ -22,20 +22,20 @@ namespace CarRent.Backend.API.v1.Contracts
             this.rentContractRepository = rentContractRepository;
         }
 
-        [HttpGet("/{id}")]
-        public ActionResult<RentContract> GetById(Guid id)
+        [HttpGet("{id}")]
+        public ActionResult<RentContract> GetRentContractById(Guid id)
         {
             return rentContractRepository.Get(id);
         }
 
         [HttpPost]
-        public ActionResult<RentContract> Create(Guid reservationGuid)
+        public ActionResult<RentContract> CreateRentContract(Guid reservationGuid)
         {
             return rentContractRepository.Create(reservationGuid);
         }
 
         [HttpGet]
-        public ActionResult<IEnumerable<RentContract>> GetAll()
+        public ActionResult<IEnumerable<RentContract>> GetAllRentContractsW()
         {
             return rentContractRepository.GetAll().ToList();
         }

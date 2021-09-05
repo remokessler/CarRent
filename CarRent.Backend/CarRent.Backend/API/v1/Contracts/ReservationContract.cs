@@ -21,20 +21,20 @@ namespace CarReservation.Backend.API.v1.Contracts
             this.reservationContractRepository = reservationContractRepository;
         }
 
-        [HttpGet("/{id}")]
-        public ActionResult<ReservationContract> GetById(Guid id)
+        [HttpGet("{id}")]
+        public ActionResult<ReservationContract> GetReservationContractById(Guid id)
         {
             return reservationContractRepository.Get(id);
         }
 
         [HttpPost]
-        public ActionResult<ReservationContract> Create(ReservationDTO reservationDTO)
+        public ActionResult<ReservationContract> CreateReservationContract(ReservationDTO reservationDTO)
         {
             return reservationContractRepository.Create(reservationDTO.CustomerId, reservationDTO.CarClassName, reservationDTO.StartDate, reservationDTO.EndDate);
         }
 
         [HttpGet]
-        public ActionResult<IEnumerable<ReservationContract>> GetAll()
+        public ActionResult<IEnumerable<ReservationContract>> GetAllReservationContract()
         {
             return reservationContractRepository.GetAll().ToList();
         }

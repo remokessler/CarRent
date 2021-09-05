@@ -20,20 +20,20 @@ namespace CarRent.Backend.API.v1.Cars
             this.carRepository = carRepository;
         }
 
-        [HttpGet("/{id}")]
-        public ActionResult<Car> GetById(Guid id)
+        [HttpGet("{id}")]
+        public ActionResult<Car> GetCarById(Guid id)
         {
             return carRepository.Get(id);
         }
 
         [HttpPost]
-        public ActionResult<Car> Create(CarPostDTO dto)
+        public ActionResult<Car> CreateCar(CarPostDTO dto)
         {
             return carRepository.Create(dto.Brand, dto.Type, dto.CarClass);
         }
 
         [HttpGet]
-        public ActionResult<IEnumerable<Car>> GetAll()
+        public ActionResult<IEnumerable<Car>> GetAllCars()
         {
             return carRepository.GetAll().ToList();
         }

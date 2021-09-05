@@ -1,5 +1,4 @@
 ﻿using CarRent.Backend.Domain.Customers;
-using CarRent.Backend.Infrastructure.Persistance;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -21,20 +20,20 @@ namespace CarRent.Backend.API.v1.Customers
             this.customerRepository = customerRepository;
         }
 
-        [HttpGet("/{id}")]
-        public ActionResult<Customer> GetById(Guid id)
+        [HttpGet("{id}")]
+        public ActionResult<Customer> GetCustomerById(Guid id)
         {
             return customerRepository.Get(id);
         }
 
         [HttpPost]
-        public ActionResult<Customer> Create(CustomerPostDTO customer)
+        public ActionResult<Customer> CreateCustomer(CustomerPostDTO customer)
         {
             return customerRepository.Create(customer.Name, customer.Firstname, customer.City, customer.Street, customer.ZipCode);
         }
 
         [HttpGet]
-        public ActionResult<IEnumerable<Customer>> GetAll()
+        public ActionResult<IEnumerable<Customer>> GetAllCustomers()
         {
             return customerRepository.GetAll().ToList();
         }
