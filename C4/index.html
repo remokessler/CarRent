@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="https://example.com/C4/" rel="canonical"/>
+<link href="../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.2.2, mkdocs-material-7.2.6" name="generator"/>
+<title>Big Picture via C4-Pattern - Car Rent Remo Kessler</title>
+<link href="../assets/stylesheets/main.802231af.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.3f5d1f46.min.css" rel="stylesheet"/>
+<meta content="#2094f3" name="theme-color"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=:300,400,400i,700%7C&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font-family:"";--md-code-font-family:""}</style>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mermaid/7.0.9/mermaid.dark.css" rel="stylesheet"/>
+</head>
+<body data-md-color-accent="orange" data-md-color-primary="blue" data-md-color-scheme="slate" dir="ltr">
+<script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#big-picture-via-c4-pattern">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="Car Rent Remo Kessler" class="md-header__button md-logo" data-md-component="logo" href=".." title="Car Rent Remo Kessler">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Car Rent Remo Kessler
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Big Picture via C4-Pattern
+            
+          </span>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Car Rent Remo Kessler" class="md-nav__button md-logo" data-md-component="logo" href=".." title="Car Rent Remo Kessler">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"></path></svg>
+</a>
+    Car Rent Remo Kessler
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="..">
+        Home
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../4%2B1-View/">
+        4+1 - View
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Big Picture via C4-Pattern
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Big Picture via C4-Pattern
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#context">
+    Context
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#container">
+    Container
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#components">
+    Components
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#classes">
+    Classes
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Dokumentation/">
+        Dokumentation
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Domain-Model/">
+        Domain Model
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Use-Cases/">
+        Use-Cases
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../mkdocs/">
+        How To MkDocs
+      </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#context">
+    Context
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#container">
+    Container
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#components">
+    Components
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#classes">
+    Classes
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="big-picture-via-c4-pattern">Big Picture via C4-Pattern</h1>
+<ul>
+<li>Der Sachbearbeiter kann Kunden mit Namen und Adresse und Kundennummer im System verwalten,
+d.h. erfassen, bearbeiten, löschen und den Kunden mit dessen Namen oder Kundennummer suchen.</li>
+<li>Der Sachbearbeiter kann zudem die Autos von CarRent verwalten und nach denen suchen.</li>
+<li>Jedes Auto kann einer bestimmten Klasse zwischen Luxusklasse, Mittelklasse oder Einfachklasse
+zugeordnet werden und besitzt zudem eine Marke, einen Typ und eine eindeutige Identifikation.</li>
+<li>Jede Klasse besitzt eine Tagesgebühr.</li>
+<li>Bei einer neuen Reservation kann der Kunde ein Auto aus einer bestimmten Klasse wählen. Er muss
+zudem die Anzahl der Tage (Start/Enddatum) angeben, die er das Auto gerne mieten möchte. Dabei
+werden die Gesamtkosten berechnet. Wird die Reservation gespeichert, so wird sie mit einer
+Reservationsnummer ablegt.</li>
+<li>Bei Abholung des Autos wird die Reservation in einen Mietvertrag umgewandelt.</li>
+</ul>
+<h2 id="context">Context</h2>
+<div class="mermaid">classDiagram
+    PotentialCustomer -- User : Calls
+    User -- CarRentWebApp : Interacts with
+    CarRentWebApp -- CarRentAPI : Interacts with</div>
+<h2 id="container">Container</h2>
+<div class="mermaid">classDiagram
+    CarRentBackend &lt;--&gt; CarRentFrontend : Transfair of Domain Objects
+    CarRentBackend --&gt; ContractMicroService : Returns 
+    CarRentBackend --&gt; ContractMicroService</div>
+<h2 id="components">Components</h2>
+<ul>
+<li>Car</li>
+<li>Via CarController und Repo könnnen Autos verwaltet werden.</li>
+<li>ReservationContract</li>
+<li>Via ReservationContractController und Repo können Reservationen verwaltet werden.</li>
+<li>RentContract</li>
+<li>Via RentContractController und Repo können Reservationen in Mietverträge umgewandelt werden und diese verwaltet werden.</li>
+<li>Customer</li>
+<li>Via CustomerController und Repo können Kunden verwaltet werden.</li>
+</ul>
+<h2 id="classes">Classes</h2>
+<p><a href="https://mermaid-js.github.io/mermaid-live-editor/edit#eyJjb2RlIjoiY2xhc3NEaWFncmFtXG4gICAgQ2FyQ2xhc3MgPHwtLSBTaW1wbGVDYXIgOiBpc1xuICAgIENhckNsYXNzIDx8LS0gTHV4dXJ5Q2FyIDogaXNcbiAgICBDYXJDbGFzcyA8fC0tIEF2ZXJhZ2VDYXIgOiBpc1xuICAgIENhciAtLSBDYXJCcmFuZCA6IGhhc1xuICAgIENhciAtLSBDYXJDbGFzcyA6IGhhc1xuICAgIFJlbnRDb250cmFjdCAtLSBDYXJCcmFuZCA6IGhhc1xuICAgIFJlc2VydmF0aW9uQ29udHJhY3QgLS0gQ2FyIDogaGFzXG4gICAgSUNvbnRyYWN0IDx8LS0gQ3VzdG9tZXIgOiBoYXNcbiAgICBDdXN0b21lciA8fC0tfD4gQWRyZXNzIDogaGFzXG4gICAgSUNvbnRyYWN0IDx8LS0gUmVudENvbnRyYWN0IDogaXNcbiAgICBJQ29udHJhY3QgPHwtLSBSZXNlcnZhdGlvbkNvbnRyYWN0XG4gICAgY2xhc3MgQ3VzdG9tZXJ7XG4gICAgICArc3RyaW5nIE5hbWVcbiAgICAgICtzdHJpbmcgRmlyc3RuYW1lXG4gICAgICArQWRyZXNzIEFkcmVzc1xuICAgIH1cbiAgICBjbGFzcyBBZHJlc3N7XG4gICAgICArc3RyaW5nIFN0cmVldFxuICAgIH1cbiAgICBjbGFzcyBDYXJ7XG4gICAgICArQ2FyQ2xhc3MgQ2FyQ2xhc3NcbiAgICAgICtUeXBlIFR5cGVcbiAgICB9XG4gICAgY2xhc3MgQ2FyQ2xhc3Mge1xuICAgIH1cbiAgICBjbGFzcyBDYXJCcmFuZCB7XG4gICAgK3N0cmluZyBOYW1lXG4gICAgfVxuICAgIGNsYXNzIElDb250cmFjdCB7XG4gICAgICAgICtEYXRlIFN0YXJ0XG4gICAgICAgICtEYXRlIEVuZFxuICAgICAgICArQ3VzdG9tZXIgQ3VzdG9tZXJcbiAgICB9XG4gICAgY2xhc3MgUmVzZXJ2YXRpb25Db250cmFjdCB7XG4gICAgICAgICtDYXIgQ2FyXG4gICAgfVxuICAgIGNsYXNzIFJlbnRDb250cmFjdCB7XG4gICAgICAgICtDYXJCcmFuZCBDYXJCcmFuZFxuICAgIH1cbiAgICAgICAgICAgICIsIm1lcm1haWQiOiJ7XG4gIFwidGhlbWVcIjogXCJkYXJrXCJcbn0iLCJ1cGRhdGVFZGl0b3IiOmZhbHNlLCJhdXRvU3luYyI6dHJ1ZSwidXBkYXRlRGlhZ3JhbSI6ZmFsc2V9">mermaid-link</a>
+<div class="mermaid">classDiagram
+    CarClass "x" &lt;|-- "y" SimpleCar : is
+    CarClass &lt;|-- LuxuryCar : is
+    CarClass &lt;|-- AverageCar : is
+    Car -- CarBrand : has
+    Car -- CarClass : has
+    RentContract -- CarBrand : has
+    ReservationContract -- Car : has
+    IContract &lt;|-- Customer : has
+    Customer &lt;|--|&gt; Adress : has
+    IContract &lt;|-- RentContract : is
+    IContract &lt;|-- ReservationContract
+    class Customer{
+      +string Name
+      +string Firstname
+      +Adress Adress
+    }
+    class Adress{
+      +string Street
+    }
+    class Car{
+      +CarClass CarClass
+      +Type Type
+    }
+    class CarClass {
+    }
+    class CarBrand {
+    +string Name
+    }
+    class IContract {
+        +Date Start
+        +Date End
+        +Customer Customer
+    }
+    class ReservationContract {
+        +Car Car
+    }
+    class RentContract {
+        +CarBrand CarBrand
+    }
+</div></p>
+<p>Abweichungen:</p>
+<p>Adressen wurden der Einfachheit weggelsassen.</p>
+<p>Simple, Luxury und Average Car wurden zu Strings / Identifiers für die CarClass.</p>
+</article>
+</div>
+</div>
+<a class="md-top md-icon" data-md-component="top" data-md-state="hidden" href="#">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path></svg>
+            Back to top
+          </a>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: 4+1 - View" class="md-footer__link md-footer__link--prev" href="../4%2B1-View/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Previous
+              </span>
+              4+1 - View
+            </div>
+</div>
+</a>
+<a aria-label="Next: Dokumentation" class="md-footer__link md-footer__link--next" href="../Dokumentation/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Next
+              </span>
+              Dokumentation
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+          Material for MkDocs
+        </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "navigation.top", "search.suggest", "search.highlight"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.409db549.min.js", "version": null}</script>
+<script src="../assets/javascripts/bundle.756773cc.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/7.0.9/mermaid.min.js"></script>
+<script>mermaid.initialize({});</script></body>
+</html>
