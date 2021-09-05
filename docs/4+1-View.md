@@ -12,23 +12,33 @@ Siehe C4 Diagramme.
 
 ## Implementation View
 
-Definieren Sie die Repository und Source-Struktur, sowie wichtige Elemente der Services und  Komponenten.
-
-CarRent
-
 * CarRent.Backend
 	* Solution
 	* CarRent.Backend
 		* API
+			* v1
+				* Cars --> Controller und DTOs
+				* Contracts --> Controller und DTOs
+				* Customers --> Controller und DTOs
+			* (Theoretisch v2)
 		* Application
-		* Domain
+			* // Theoretisch ablage von Services.
+		* Domain --> Später enthält er die Micro Services
 			* Cars --> Enthält Domain Objects zum Typ Car.
 				* Brand
 				* Car
 				* CarClass
 				* ICarRepository
 			* Contracts--> Enthält Domain Objects zu den Contracttypen 
-			* Customers
+				* IContract
+				* IRentContractRepository
+				* IReservationContractRepository
+				* IRentContractRepository
+				* RentContract
+				* ReservationContract
+			* Customers --> Enthält alle Domain Objects zum Customer
+				* Customer
+				* ICustomerRepository
 		* Infrastructure --> Enthält klassen mit Db-Zugriffen
 			* Persistance
 				* CareRentDbContext

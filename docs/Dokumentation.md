@@ -1,6 +1,6 @@
 # Dokumentation
 
-Qualitätsbaum für NFR 
+Qualitätsbaum für NFR
 
 Teststrategie / -planung 
 

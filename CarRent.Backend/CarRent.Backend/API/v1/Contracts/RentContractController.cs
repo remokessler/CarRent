@@ -10,7 +10,7 @@ using System.Linq;
 namespace CarRent.Backend.API.v1.Contracts
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("[controller]/v1")]
     public class RentContractController : ControllerBase
     {
         private readonly ILogger<RentContractController> logger;
@@ -38,6 +38,12 @@ namespace CarRent.Backend.API.v1.Contracts
         public ActionResult<IEnumerable<RentContract>> GetAllRentContractsW()
         {
             return rentContractRepository.GetAll().ToList();
+        }
+
+        [HttpDelete("{id}")]
+        public void DeleteRentContract(Guid id)
+        {
+            rentContractRepository.Delete(id);
         }
     }
 }

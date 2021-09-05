@@ -9,7 +9,7 @@ using System.Linq;
 namespace CarReservation.Backend.API.v1.Contracts
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("[controller]/v1")]
     public class ReservationContractController : ControllerBase
     {
         private readonly ILogger<ReservationContractController> logger;
@@ -37,6 +37,12 @@ namespace CarReservation.Backend.API.v1.Contracts
         public ActionResult<IEnumerable<ReservationContract>> GetAllReservationContract()
         {
             return reservationContractRepository.GetAll().ToList();
+        }
+
+        [HttpDelete("{id}")]
+        public void DeleteReservationContract(Guid id)
+        {
+            reservationContractRepository.Delete(id);
         }
     }
 }

@@ -8,7 +8,7 @@ using System.Linq;
 namespace CarRent.Backend.API.v1.Customers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("[controller]/v1")]
     public class CustomerController : ControllerBase
     {
         private readonly ILogger<CustomerController> logger;
@@ -36,6 +36,12 @@ namespace CarRent.Backend.API.v1.Customers
         public ActionResult<IEnumerable<Customer>> GetAllCustomers()
         {
             return customerRepository.GetAll().ToList();
+        }
+
+        [HttpDelete("{id}")]
+        public void DeleteCustomer(Guid id)
+        {
+            customerRepository.Delete(id);
         }
     }
 }

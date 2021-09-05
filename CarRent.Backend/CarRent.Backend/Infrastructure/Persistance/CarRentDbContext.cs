@@ -12,7 +12,6 @@ namespace CarRent.Backend.Infrastructure.Persistance
         public DbSet<Brand> Brands { get; set; }
         public DbSet<CarClass> CarClass { get; set; }
         public DbSet<Customer> Customers { get; set; }
-        public DbSet<Adress> Adresses { get; set; }
         public DbSet<RentContract> RentContracts { get; set; }
         public DbSet<ReservationContract> ReservationContracts { get; set; }
 
